@@ -10,7 +10,7 @@
  
 $key_color: #f57900;
 $neutral_color: #919191;
-$overpass: 'Overpass','Source Sans Pro', 'Source Sans', sans-serif;
+$defaultfont: 'Source Sans Pro', 'Source Sans', sans-serif;
 
 html,
 body {
@@ -55,7 +55,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $overpass;
+  font-family: $defaultfont;
   margin-top: 1.5em;
   &:first-child { margin-top: 0.3em; }
   &.voffset { margin-top: 3em; }
@@ -103,30 +103,32 @@ aside {
 }
 
 .navbar-default {
-  border-color: rgba(34,34,34,.05);
-  background-color: #fff;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
+  background-color: lighten($neutral_color,30%);
 }
 
 .navbar-default .navbar-header .navbar-brand {
-  font-family: 'Overpass','Source Sans Pro', 'Source Sans', sans-serif;
-  text-transform: uppercase;
+  font-family: 'Source Sans Pro', 'Source Sans', sans-serif;
   font-weight: 700;
-  color: $key_color;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 70%;
+  display: block;
+  padding-left: 42px;
+  background: url('/img/logo.svg') no-repeat 6px center;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-  color: lighten($key_color,5%);
 }
 
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 700;
+  font-weight: light;
+  font-size: 110%;
+  font-weight: 400;
   color: #222;
 }
 
@@ -149,8 +151,7 @@ aside {
 
 @media(min-width:768px) {
   .navbar-default {
-    border-color: rgba(255,255,255,.7);
-    background-color: rgba(255,255,255,0.8);
+    border-width: none;
     /* background-image: linear-gradient(to bottom,transparentize(#fff,.1),transparentize(#fff,0.9)); */
   }
 
@@ -161,8 +162,6 @@ aside {
 
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
-    color: #fff;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   }
 
   .navbar-default .nav > li>a,
@@ -175,12 +174,11 @@ aside {
   }
 
   .navbar-default.affix {
-    border-color: rgba(34,34,34,.05);
-    background-color: #fff;
+
   }
 
   .navbar-default.affix .navbar-header .navbar-brand {
-    font-size: 15px;
+    /* font-size: 70%; */
   }
 
   .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -565,7 +563,7 @@ table {
     padding-top: 0;
     color: #fff;
     text-transform: uppercase;
-    font-family: $overpass;
+    font-family: $defaultfont;
     font-weight: bold;
     height: inherit;
   }
