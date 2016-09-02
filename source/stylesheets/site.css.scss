@@ -8,7 +8,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
  
-$key_color: #f57900;
+$key_color: #729fcf;
 $neutral_color: #919191;
 $defaultfont: 'Source Sans Pro', 'Source Sans', sans-serif;
 
@@ -27,7 +27,7 @@ body {
 
 hr {
   max-width: 50px;
-  border-color: #f05f40;
+  border-color: $key_color;
   border-width: 3px;
 }
 
@@ -118,6 +118,7 @@ aside {
   display: block;
   padding-left: 42px;
   background: url('/img/logo.svg') no-repeat 6px center;
+  margin: 0 12px;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -202,7 +203,6 @@ header {
   width: 100%;
   min-height: auto;
   text-align: center;
-  color: $key_color;
   background-color: $key_color;
   background-image: linear-gradient(to bottom, #eee, #fff);
   background-position: center;
@@ -218,9 +218,9 @@ header .header-content {
 
 header .header-content .header-content-inner h1 {
   margin-top: 0;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  font-weight: 700;
+  margin-bottom: 1em;
+  font-weight: 300;
+  font-size: 250%;
 }
 
 header .header-content .header-content-inner hr {
@@ -357,9 +357,8 @@ pre {
 }
 
 .btn-default {
-  border-color: #fff;
-  color: #222;
-  background-color: #fff;
+  color: #000;
+  background-color: $neutral_color;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
@@ -371,9 +370,7 @@ pre {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  border-color: #ededed;
-  color: #222;
-  background-color: #f2f2f2;
+  background-color: $neutral_color;
 }
 
 .btn-default:active,
@@ -410,9 +407,8 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-  border-color: darken($key_color,10%);
-  color: $key_color;
-  background-color: #fff;
+  background-color: lighten($neutral_color,30%);
+  color: #000;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
@@ -463,7 +459,7 @@ fieldset[disabled] .btn-default.active {
 
 .btn {
   border: 0;
-  border-radius: 300px;
+  border-radius: 3px;
   text-transform: uppercase;
   font-weight: 700;
 }
