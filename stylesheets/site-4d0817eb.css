@@ -6344,16 +6344,16 @@ header .header-content {
   padding: 100px 15px;
   text-align: center; }
 
-header .header-content .header-content-inner h1 {
+header .header-content h1 {
   margin-top: 0;
   margin-bottom: 1em;
-  font-weight: 300;
   font-size: 250%; }
-
-header .header-content .header-content-inner hr {
+header .header-content h2 {
+  margin-top: 2em;
+  margin-bottom: 1em; }
+header .header-content hr {
   margin: 30px auto; }
-
-header .header-content .header-content-inner p {
+header .header-content p {
   margin-bottom: 50px;
   font-size: 16px;
   font-weight: 300;
@@ -6663,3 +6663,28 @@ table {
   /* background-color: lighten($key_color,30%); */
   margin: 3em -65px 3em -65px;
   padding: 3em; }
+  .row.toned a.icon {
+    display: inline-block;
+    width: 92px;
+    height: 92px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px;
+    padding-top: 92px;
+    cursor: pointer;
+    font-size: 90%;
+    transition: 500ms color ease-in-out; }
+    .row.toned a.icon:hover {
+      color: black; }
+
+#apiref {
+  background-image: url(../img/api-reference-ab70cc55.svg); }
+
+#hig {
+  background-image: url(../img/design-guidelines-3ab2c549.svg); }
+
+#tutorials {
+  background-image: url(../img/tutorials-b2e441a4.svg); }
+
+#flatpak {
+  background-image: url(../img/distribute-4e5e3458.svg); }
