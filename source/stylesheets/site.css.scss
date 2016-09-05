@@ -61,8 +61,8 @@ h6 {
   &.voffset { margin-top: 3em; }
 }
 
-h1 { font-size: 200%; }
-h2 { font-size: 180%; }
+h1 { font-size: 200%; font-weight: 300; }
+h2 { font-size: 180%; font-weight: 300; }
 h3 { font-size: 130%; font-weight: 800; color: $neutral_color; }
 h4 { font-size: 120%; font-weight: 600; color: $neutral_color; }
 
@@ -608,4 +608,11 @@ table {
   color: $neutral_color;
   font-weight: bold;
   font-size: 90%;
+}
+
+.row.toned {
+  background-color: lighten($neutral_color,35%);
+  /* background-color: lighten($key_color,30%); */
+  margin: 3em -65px 3em -65px;
+  padding: 3em;
 }
