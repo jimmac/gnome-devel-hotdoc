@@ -614,6 +614,17 @@ table {
   font-size: 90%;
 }
 
+.box {
+  background-color: lighten($neutral_color,35%);
+  min-height: 400px;
+  margin-bottom: 2em;
+  padding: 2em;
+}
+
+@media(min-width:768px) {
+ .box:first-child { margin-right: 8px; }
+}
+
 .row.toned {
   background-color: lighten($neutral_color,35%);
   /* background-color: lighten($key_color,30%); */
