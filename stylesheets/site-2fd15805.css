@@ -6222,10 +6222,12 @@ h6 {
     margin-top: 3em; }
 
 h1 {
-  font-size: 200%; }
+  font-size: 200%;
+  font-weight: 300; }
 
 h2 {
-  font-size: 180%; }
+  font-size: 180%;
+  font-weight: 300; }
 
 h3 {
   font-size: 130%;
@@ -6655,3 +6657,9 @@ table {
   color: #919191;
   font-weight: bold;
   font-size: 90%; }
+
+.row.toned {
+  background-color: #eaeaea;
+  /* background-color: lighten($key_color,30%); */
+  margin: 3em -65px 3em -65px;
+  padding: 3em; }
