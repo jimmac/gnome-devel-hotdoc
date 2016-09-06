@@ -15,3 +15,8 @@
             %li
               = "<a href='/index.html#{i.link}'>#{i.title}</a>"
   / /.navbar-collapse
+  %ul.nav.navbar-nav.navbar-right
+    %li
+      = link_to "#", :class => "search" do
+        = image_tag "/img/search.svg"
+        Search
