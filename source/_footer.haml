@@ -1,14 +1,14 @@
 %section#footer.bg-black
   .container
     .row
-      .col-lg-3.col-lg-offset-1
+      .col-md-1.col-md-offset-3.col-xs-2.col-xs-offset-2
         %a.navbar-brand.page-scroll{:href => "#page-top"} 
           =image_tag '/img/logo.svg', :title => 'Flatpak', :class => 'full'
-      %ul.col-lg-7
-        %li.toplevel
+      %ul.col-md-8.col-xs-8
+        %li.toplevel.col-md-6
           = link_to "Home", "index.html"
         - data.menu.each do |i|
-          %li.toplevel
+          %li.toplevel.col-md-6
             /id links on index page
             - if (current_page.path == 'index.html')
               = link_to i.title, i.link, :class => "page-scroll"
