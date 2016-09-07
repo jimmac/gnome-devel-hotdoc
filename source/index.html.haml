@@ -13,8 +13,7 @@ description: Lorem ipsum dolor sit amet
     .container-fluid
       .row.toned
         .col-lg-2.col-lg-offset-2.col-xs-6.col-md-3
-          %a#apiref.icon
-            API Reference
+          = link_to "API Reference", "/api.html", :class => "icon", :id => "apiref"
         .col-lg-2.col-xs-6.col-md-3
           %a#hig.icon
             Design Guidelines
