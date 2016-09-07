@@ -32,7 +32,8 @@
 
         = partial "navigation"
       / /.container-fluid
-  = yield
+  %main
+    = yield
   = partial "footer"
   = javascript_include_tag :jquery
   = javascript_include_tag "jquery.easing.min"

@@ -12,10 +12,10 @@ $key_color: #729fcf;
 $neutral_color: #919191;
 $defaultfont: 'Source Sans Pro', 'Source Sans', sans-serif;
 
-html,
 body {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 body {
@@ -23,6 +23,10 @@ body {
   font-size: 13pt;
   font-weight: 400;
   font-style: normal;
+}
+
+main {
+  flex: 1;
 }
 
 hr {
@@ -100,6 +104,7 @@ p {
 
 section {
   padding: 100px 0;
+  background-color: lighten($neutral_color, 40%);
 }
 
 aside {
@@ -253,7 +258,7 @@ pre {
 
 @media(min-width:768px) {
   header {
-    min-height: 100%;
+
   }
 
   header .header-content {
