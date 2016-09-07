@@ -6618,14 +6618,13 @@ table {
     #footer ul li {
       list-style: none;
       display: block;
-      font-size: 80%; }
+      font-size: 80%;
+      margin-bottom: 1em; }
       #footer ul li.toplevel {
-        text-transform: uppercase;
-        margin-bottom: 1em; }
+        text-transform: uppercase; }
       #footer ul li a {
         display: block; }
       #footer ul li ul {
-        margin: 0;
         padding: 0; }
         #footer ul li ul li {
           text-transform: none;
