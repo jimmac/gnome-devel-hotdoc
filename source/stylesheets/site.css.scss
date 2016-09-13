@@ -651,4 +651,24 @@ table {
   #tutorials { background-image: url(/img/tutorials.svg); }
   #flatpak { background-image: url(/img/distribute.svg); }
 
+/* Sidebar */
+
+@media screen and (max-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+  }
+
+  .row-offcanvas-left {
+    display: none;
+  }
+
+  .row-offcanvas-left.active {
+    display: block;
+  }
+
+  .sidebar-offcanvas {
+    margin-bottom: 3em;
+  }
+}
+
 

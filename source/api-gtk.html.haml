@@ -1,0 +1,59 @@
+---
+title: GNOME APIs
+description: Lorem ipsum dolor sit amet
+---
+
+%section
+  .container.visible-xs
+    .col-xs-12
+      %button.btn.btn-primary.btn-xs{:"type" => "button", :"data-toggle" => "offcanvas"}
+        toc
+
+  .container
+    .row-offcanvas.row-offcanvas-left      
+      #sidebar.sidebar-offcanvas
+        .col-sm-4.col-md-3
+          %ul.nav.nav-sidebar
+            %li.active
+              %a#sec{:href => "/api.html"}
+                %h2 
+                  %strong &lt; 
+                  GTK+
+            %li
+              %a GTK+ Overview
+              %ul.nav.nav-sidebar
+                %li
+                  %a Getting Started with GTK+
+                %li
+                  %a Mailing Lists and Bug Reports
+                %li
+                  %a Common Questions
+                %li
+                  %a Getting Started with GTK+
+                %li
+                  %a Drawing Model
+            %li
+              %a GTK+ Widgets and Objects
+            %li
+              %a Theming in GTK+
+            %li
+              %a Migrating from Previous Versions
+            %li
+              %a GTK+ Tools
+            %li
+              %a GTK+ Platform Support
+    .col-sm-8.col-md-9
+      %h1 GTK+ Overview
+      %p
+        GTK+ is a library for creating graphical user interfaces. It works on many UNIX-like platforms, Windows, and OS X. GTK+ is released under the GNU Library General Public License (GNU LGPL), which allows for flexible licensing of client applications. GTK+ has a C-based object-oriented architecture that allows for maximum flexibility. Bindings for many other languages have been written, including C++, Objective-C, Guile/Scheme, Perl, Python, TOM, Ada95, Free Pascal, and Eiffel. 
+      %p
+        GTK+ is a library for creating graphical user interfaces. It works on many UNIX-like platforms, Windows, and OS X. GTK+ is released under the GNU Library General Public License (GNU LGPL), which allows for flexible licensing of client applications. GTK+ has a C-based object-oriented architecture that allows for maximum flexibility. Bindings for many other languages have been written, including C++, Objective-C, Guile/Scheme, Perl, Python, TOM, Ada95, Free Pascal, and Eiffel. 
+      %p
+        GTK+ is a library for creating graphical user interfaces. It works on many UNIX-like platforms, Windows, and OS X. GTK+ is released under the GNU Library General Public License (GNU LGPL), which allows for flexible licensing of client applications. GTK+ has a C-based object-oriented architecture that allows for maximum flexibility. Bindings for many other languages have been written, including C++, Objective-C, Guile/Scheme, Perl, Python, TOM, Ada95, Free Pascal, and Eiffel. 
+    
+:javascript
+  $(document).ready(function() {
+    $('[data-toggle=offcanvas]').click(function() {
+      $('.row-offcanvas').toggle("slow");
+    });
+  });
