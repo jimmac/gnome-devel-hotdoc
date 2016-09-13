@@ -60,84 +60,86 @@
   </body>
   <main>
     <section>
+      <div class='container visible-xs'>
+        <div class='col-xs-12'>
+          <button class='btn btn-primary btn-xs' data-toggle='offcanvas' type='button'>
+            toc
+          </button>
+        </div>
+      </div>
       <div class='container'>
-        <h1>API Reference</h1>
-        <h2>Essential Libraries</h2>
-        <div class='row'>
-          <div class='col-md-4'>
-            <h3>
-              <a href="api-gtk.html">GTK+</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse lectus. Mauris sed nulla quis nisi interdum tempor. Proin diam augue, semper vitae, varius et, viverra id, felis.</p>
-          </div>
-          <div class='col-md-4'>
-            <h3>
-              <a id='gio'>GIO</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse lectus.</p>
-          </div>
-          <div class='col-md-4'>
-            <h3>
-              <a id='gsettings'>GSettings</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse lectus.</p>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-md-4'>
-            <h3>
-              <a id='jsonglib'>JSON-GLib</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse lectus.</p>
-          </div>
-          <div class='col-md-4'>
-            <h3>
-              <a id='webkitgtk'>WebKitGTK+</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse lectus.</p>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-md-8'>
-            <h2>Base Platform</h2>
-            <div class='row'>
-              <div class='col-md-6'>
-                <h3>GObject</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse lectus. Mauris sed nulla quis nisi interdum tempor. Proin diam augue, semper vitae, varius et, viverra id, felis.</p>
-              </div>
-              <div class='col-md-6'>
-                <h3>Glib</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse lectus.</p>
-              </div>
-            </div>
-          </div>
-          <div class='col-md-4'>
-            <h2>Audio/Visual</h2>
-            <div class='row'>
-              <div class='col-md-12'>
-                <h3>GStreamer</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse lectus.</p>
-              </div>
+        <div class='row-offcanvas row-offcanvas-left'>
+          <div class='sidebar-offcanvas' id='sidebar'>
+            <div class='col-sm-4 col-md-3'>
+              <ul class='nav nav-sidebar'>
+                <li class='active'>
+                  <a href='/api.html' id='sec'>
+                    <h2>
+                      <strong>&lt;</strong>
+                      GTK+
+                    </h2>
+                  </a>
+                </li>
+                <li>
+                  <a>GTK+ Overview</a>
+                  <ul class='nav nav-sidebar'>
+                    <li>
+                      <a>Getting Started with GTK+</a>
+                    </li>
+                    <li>
+                      <a>Mailing Lists and Bug Reports</a>
+                    </li>
+                    <li>
+                      <a>Common Questions</a>
+                    </li>
+                    <li>
+                      <a>Getting Started with GTK+</a>
+                    </li>
+                    <li>
+                      <a>Drawing Model</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a>GTK+ Widgets and Objects</a>
+                </li>
+                <li>
+                  <a>Theming in GTK+</a>
+                </li>
+                <li>
+                  <a>Migrating from Previous Versions</a>
+                </li>
+                <li>
+                  <a>GTK+ Tools</a>
+                </li>
+                <li>
+                  <a>GTK+ Platform Support</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <h2>Online Services & APIs</h2>
-        <div class='row'>
-          <div class='col-md-4'>
-            <h3>Soup</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse lectus.</p>
-          </div>
-          <div class='col-md-4'>
-            <h3>Rest</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse lectus.</p>
-          </div>
-          <div class='col-md-4'>
-            <h3>GData</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse lectus.</p>
-          </div>
+        <div class='col-sm-8 col-md-9'>
+          <h1>GTK+ Overview</h1>
+          <p>
+            GTK+ is a library for creating graphical user interfaces. It works on many UNIX-like platforms, Windows, and OS X. GTK+ is released under the GNU Library General Public License (GNU LGPL), which allows for flexible licensing of client applications. GTK+ has a C-based object-oriented architecture that allows for maximum flexibility. Bindings for many other languages have been written, including C++, Objective-C, Guile/Scheme, Perl, Python, TOM, Ada95, Free Pascal, and Eiffel.
+          </p>
+          <p>
+            GTK+ is a library for creating graphical user interfaces. It works on many UNIX-like platforms, Windows, and OS X. GTK+ is released under the GNU Library General Public License (GNU LGPL), which allows for flexible licensing of client applications. GTK+ has a C-based object-oriented architecture that allows for maximum flexibility. Bindings for many other languages have been written, including C++, Objective-C, Guile/Scheme, Perl, Python, TOM, Ada95, Free Pascal, and Eiffel.
+          </p>
+          <p>
+            GTK+ is a library for creating graphical user interfaces. It works on many UNIX-like platforms, Windows, and OS X. GTK+ is released under the GNU Library General Public License (GNU LGPL), which allows for flexible licensing of client applications. GTK+ has a C-based object-oriented architecture that allows for maximum flexibility. Bindings for many other languages have been written, including C++, Objective-C, Guile/Scheme, Perl, Python, TOM, Ada95, Free Pascal, and Eiffel.
+          </p>
         </div>
       </div>
     </section>
+    <script>
+      $(document).ready(function() {
+        $('[data-toggle=offcanvas]').click(function() {
+          $('.row-offcanvas').toggle("slow");
+        });
+      });
+    </script>
   </main>
   <section class='bg-black' id='footer'>
     <div class='container'>

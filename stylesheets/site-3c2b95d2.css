@@ -6680,3 +6680,17 @@ table {
 
 #flatpak {
   background-image: url(../img/distribute-4e5e3458.svg); }
+
+/* Sidebar */
+@media screen and (max-width: 768px) {
+  .row-offcanvas {
+    position: relative; }
+
+  .row-offcanvas-left {
+    display: none; }
+
+  .row-offcanvas-left.active {
+    display: block; }
+
+  .sidebar-offcanvas {
+    margin-bottom: 3em; } }
